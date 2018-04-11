@@ -33,18 +33,18 @@ body {
     margin: 30% 16% 16% 16%;
 }
 
-.e {
+.bottomleft{
     float: left;
     margin-left: 19%;
 }
-/*左边图*/
+
 .footerleft {
     display: block;
     width: 45px;
     height: 45px;
 }
 
-.f {
+.bottomright{
     float: right;
     margin-right: 17%;
 }
