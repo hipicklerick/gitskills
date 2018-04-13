@@ -47,3 +47,6 @@ button{
     display:flex;
     background-color: white;
 }
+.rowtop input{
+    flex:1;
+}
