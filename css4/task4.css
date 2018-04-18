@@ -7,46 +7,66 @@ body{
     background-color:#eff0f4;
 }
 header{
-    width:360px;
+    width:100%;
     background-color: #5fc0cd;
     color:#f3f4f6;
-    display:flex;
-}
-div{       
-    padding:0 20px;
-    font-size: 16px;
-    justify-content:space-between;
-}
-.left{
-    flex-basis: 30%; 
-}
-.center{
-    flex-basis: 30%; 
-}
-.right{
-    flex-basis: 30%; 
-}
-button{
-    width:360px;
-    background-color: #5fc0cd;
-    font-size: 16px;
-}
-.button{
-    font-size: 16px;
-}
-.forgetpw{
-    float:right;
-    color:#5fc0cd;
+    display: flex;
+    justify-content: space-around;
 }
 
-.rowtop{
-    display:flex;
+
+
+.row-top{
     background-color: white;
+    width:100%;
+    margin-top: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: flex-start; 
 }
-.rowbottom{
-    display:flex;
+.input-top{
+    border-width: 0 0 0 1px;border-style:solid;border-color:#eaedee;
+}
+
+.row-center{
     background-color: white;
+    width:100%;
+    margin-top: 1px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
 }
-.rowtop input{
-    flex:1;
+.input-center{
+border-style: solid;border-color:#eaedee;    border-width: 0 0 0 1px;
+}
+.row-bottom{
+    background-color: #5fc0cd;
+    width:100%;
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+.forgotpw{
+    font-size: 15px;
+    color:#5fc0cd;
+    display: flex;
+    justify-content:flex-end;
+    margin-top: 15px;
+}
+.iphone{
+    width:15px;
+    height:25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.locked{
+    width:15px;
+    height:25px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
