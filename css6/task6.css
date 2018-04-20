@@ -1,0 +1,9 @@
+html,body{
+    height: 100%;
+    margin: 0;
+}
+.sprite-position2 {
+        width: 19px;
+        height: 23px;
+        background-position: -57px -65px;
+}
