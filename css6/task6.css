@@ -1,9 +1,86 @@
 html,body{
     height: 100%;
+    margin:0;
+}
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
     margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background-color: #5fc0cd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headleft{
+    width: 60px;
+    height: 30px;
+    padding-left: 15px;
+    padding-top: 10px;
+    color: white;
+    border-radius: 5px;
+    background-color: #55a8b3;
+}
+.headright{
+    width: 60px;
+    height: 30px;
+    padding-left: 15px;
+    padding-top: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color:#55a8b3;
+
 }
 .sprite-position2 {
-        width: 19px;
-        height: 23px;
-        background-position: -57px -65px;
+    width: 19px;
+    height: 23px;
+    background-position: -57px -65px;
+    background:url(./spritesheet.png) no-repeat;
 }
+.ulstart{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 40px;
+}
+select{
+    font-size: 15px;
+    color: grey;
+}
+p{
+    height: 60px;
+    width: 100%;
+}
+li{
+    width: 360px;
+    height:90px;
+}
+span{
+    height: 60px;
+}
+
+
+
+
+
+
+
