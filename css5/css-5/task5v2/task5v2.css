@@ -1,6 +1,9 @@
 html {
     font-size: 625%;
 }
+/**{
+    border: 1px solid black;
+}*/
 
 /*字体放大了6.25倍 1px=0.01rem*/
 
@@ -32,8 +35,6 @@ body {
 }
 
 header {
-    display: flex;
-    align-items: center;
     position: fixed;
     left: 0px;
     top: 0px;
@@ -42,13 +43,24 @@ header {
     padding-left: 5%;
     background-color: #5fc0cd;
     color: white;
+    text-align: center;
 }
-
-span {
-    flex: 1 1 auto;
+/*此处header可用float和text align实现不需要flex*/
+.header1{
+    float: left;
+    line-height: .5rem;
+    text-align: center;
 }
-
-main {
+.header2{
+    margin: 0 auto;
+    line-height: .5rem;
+    
+}
+.position{
+    width: 10px;
+    height: 15px;
+}
+main{
     margin-top: .5rem;
 }
 
@@ -105,7 +117,7 @@ li {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
+    /*width: 100%;不能和margin-left同事出现*/
     height: 50px;
     margin-left: 15px;
     border-width: 0 0 1px 0;
@@ -139,33 +151,41 @@ p {
 }
 
 footer {
-    height: 110px;
+    height: 60px;
     font-size: 15px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: white;
+    
 }
 
 button {
-    width: 40%;
+    width: 45%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 5px;    
 }
 
 .buttonleft {
     color: #5fc0cd;
     border-color: #5fc0cd;
     background-color: white;
-    font-size: 15px;
-    margin-left: 18px;
-    margin-top: 50px;
+    font-size: 15px;   
 }
 
 .buttonright {
     color: white;
     border-color: #5fc0cd;
     background-color: #5fc0cd;
-    font-size: 15px;
-    margin-left: 15px;
-    margin-top: 50px;
+    font-size: 15px;    
+}
+.intro{
+    flex:none;
+/*禁止伸缩，注意给子集设*/
+}
+.red{
+    color: red;
 }
