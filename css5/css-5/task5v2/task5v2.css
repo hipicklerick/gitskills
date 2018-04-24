@@ -63,6 +63,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    
 }
 
 /*之前没有引用成功是因为图片文件和Html文件不在同一个文件夹*/
@@ -78,6 +79,7 @@ main {
     height: 100px;
     margin-left: 5%;
     color: white;
+    margin-top: 50px;
 }
 
 .line1 {
