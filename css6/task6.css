@@ -2,85 +2,122 @@ html,body{
     height: 100%;
     margin:0;
 }
-ul,
-li,
-ol,
-dl,
-dd,
-dt,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-form,
-fieldset,
-legend,
-img {
+ul{
     margin: 0;
     padding: 0;
 }
+body{
+    position: relative;
+}
 header{
-    width: 100%;
-    height: 50px;
+    position: absolute;
+    margin-top: 0;
+    width: 100%; 
+    height: 45px;
     background-color: #5fc0cd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-.headleft{
-    width: 60px;
-    height: 30px;
-    padding-left: 15px;
-    padding-top: 10px;
+button{
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    /*b并不居中*/
+  
+    width: 140px;
+    height:35px;
+    padding: 0;
+    border-color: #55a8b3;
+    background-color:#55a8b3;
     color: white;
-    border-radius: 5px;
-    background-color: #55a8b3;
-}
-.headright{
-    width: 60px;
-    height: 30px;
-    padding-left: 15px;
-    padding-top: 10px;
-    border-radius: 5px;
-    background-color: white;
-    color:#55a8b3;
-
-}
-.sprite-position2 {
-    width: 19px;
-    height: 23px;
-    background-position: -57px -65px;
-    background:url(./spritesheet.png) no-repeat;
-}
-.ulstart{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 40px;
-}
-select{
     font-size: 15px;
-    color: grey;
+    border-radius: 5px;
+    
 }
-p{
-    height: 60px;
-    width: 100%;
+.son1{
+    position:absolute;
+    left: 1px;
+    top: 8px;
+    width: 70px;
+}
+.son2{
+    position: absolute;
+    right: 1px;
+    top: 8px;
+    width: 70px;
+} 
+.position-1{
+    position:absolute;
+    top:10%;
+    right:5%;
+    width: 30px;
+}
+
+.container{
+    margin-top: 30px;
 }
 li{
-    width: 360px;
-    height:90px;
+    width: 100%;
+    height: 30px;
+}
+.line1{
+    background-image: url(./spritesheet.png) ;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border: 1px solid grey;
+    border-width：1px none 1px none;
+
+}
+.line1word{
+    margin-left: 10%;
 }
 span{
-    height: 60px;
+    margin-left: 10%;
+}
+.line3{
+    background-image: url(./spritesheet.png);
+    background-repeat: no-repeat;
+    background-size：23px 24px ;
+    background-position: 0 -24px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color:grey;
+}
+.button-left{
+    position: absolute;
+    left: 15%;
+    background-image: url(./footer1.png) ;
+    background-repeat: no-repeat;
+    background-color: grey;
+    border-color: transparent;
+    width: 20%;
+    height: 70%;
 }
 
 
 
+.button-center{
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    background-image: url(./footer3.png);
+    background-repeat: no-repeat;
+    background-color: grey;
+    border-color: transparent;
+    width: 20%;
+    height: 90%;
+}
+.button-right{
+    position: absolute;
+    left: 70%;
+    background-image: url(./footer4.png);
+    background-repeat: no-repeat;
+    background-color: grey;
+    border-color: transparent;
+    width: 15%;
+    height: 90%;
 
-
-
-
+}    
