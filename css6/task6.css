@@ -1,123 +1,147 @@
-html,body{
-    height: 100%;
-    margin:0;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    background-color:#5fc0cd;
+    width: 100%;
 }
-ul{
+.btn-3 img{
+    width: 30px;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+
+
+ul,
+li {
     margin: 0;
     padding: 0;
 }
-body{
-    position: relative;
+
+
+/*去除前面的点*/
+li {
+    list-style: none;
 }
-header{
-    position: absolute;
-    margin-top: 0;
-    width: 100%; 
-    height: 45px;
-    background-color: #5fc0cd;
-}
-button{
-    position: absolute;
-    left: 30%;
-    top: 10%;
-    /*b并不居中*/
-  
-    width: 140px;
-    height:35px;
-    padding: 0;
-    border-color: #55a8b3;
-    background-color:#55a8b3;
-    color: white;
-    font-size: 15px;
-    border-radius: 5px;
+
+/*已经设置了固定定位！*/
+.btn-group {
+    left: 50%;
+    top: 50%;
+    margin-left: -75px;
+    margin-top: -25px;
     
 }
-.son1{
-    position:absolute;
-    left: 1px;
-    top: 8px;
-    width: 70px;
-}
-.son2{
-    position: absolute;
-    right: 1px;
-    top: 8px;
-    width: 70px;
-} 
-.position-1{
-    position:absolute;
-    top:10%;
-    right:5%;
-    width: 30px;
+
+.btn-3 {
+    float: right;
 }
 
-.container{
-    margin-top: 30px;
+.btn-default {
+    width: 102%;
+    color: #b0b0b0;
 }
-li{
+
+.dropdown-1,
+.dropdown-2,
+.dropdown-3 {
+    margin-top: 50px;
+    width: 33%;
+    float: left;    
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    height: 30px;
 }
-.line1{
-    background-image: url(./spritesheet.png) ;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    border: 1px solid grey;
-    border-width：1px none 1px none;
 
+.footer-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
-.line1word{
-    margin-left: 10%;
-}
-span{
-    margin-left: 10%;
-}
-.line3{
+
+li i {
     background-image: url(./spritesheet.png);
-    background-repeat: no-repeat;
-    background-size：23px 24px ;
+    float: left;
+    width: 24px;
+    height: 24px;
+}
+
+.cat-1 i {
+    background-position: 0 0;
+}
+.cat-4 i {
+    background-position: 0 0;
+}
+.cat-7 i {
+    background-position: 0 0;
+}
+.cat-10 i {
+    background-position: 0 0;
+}
+.cat-13 i {
+    background-position: 0 0;
+}
+
+
+.cat-3 i {
     background-position: 0 -24px;
 }
+/*cat-3中的i标签设置bckg-position*/
+.cat-6 i {
+    background-position: 0 -24px;
+}
+.cat-9 i {
+    background-position: 0 -24px;
+}
+.cat-12 i {
+    background-position: 0 -24px;
+}
+.cat-15 i {
+    background-position: 0 -24px;
+}
+.cat-16 i {
+    background-position: 0 0;
+}
 
-footer{
-    position: absolute;
-    bottom: 0;
+.cat-3,.cat-6,.cat-9,.cat-12,.cat-15{
+    border-bottom: 1px solid #dedede;
+    color: #999999;
+}
+.cat-1,.cat-4,.cat-7,.cat-10,.cat-13{
+    color: #999999;
+}
+
+li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 30px;
+    padding-bottom: 2px;
+}
+i{
+    margin-right: 10px;
+}
+
+
+
+
+.main{
+    overflow: auto;
     width: 100%;
-    height: 70px;
-    background-color:grey;
+    height: 100%;
 }
-.button-left{
-    position: absolute;
-    left: 15%;
-    background-image: url(./footer1.png) ;
-    background-repeat: no-repeat;
-    background-color: grey;
-    border-color: transparent;
-    width: 20%;
-    height: 70%;
+.footer1{
+    width: 30px;
 }
-
-
-
-.button-center{
-    position: absolute;
-    left: 50%;
-    margin-left: -30px;
-    background-image: url(./footer3.png);
-    background-repeat: no-repeat;
-    background-color: grey;
-    border-color: transparent;
-    width: 20%;
-    height: 90%;
+.footer3{
+    width: 30px;
 }
-.button-right{
-    position: absolute;
-    left: 70%;
-    background-image: url(./footer4.png);
-    background-repeat: no-repeat;
-    background-color: grey;
-    border-color: transparent;
-    width: 15%;
-    height: 90%;
-
-}    
+.footer-line-left{
+    color:#5fc0cd;
+}
