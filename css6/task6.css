@@ -1,3 +1,9 @@
+main{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -6,13 +12,24 @@ header {
     background-color:#5fc0cd;
     width: 100%;
 }
+
 .btn-3 img{
     width: 30px;
     margin-top: 8px;
     margin-right: 8px;
 }
-
-
+.btn-header{
+    border-radius: 5px;
+}
+.btn-left{
+    background-color: #55a8b3;
+    color: #f8fafb;
+}
+.btn-right{
+    background-color: white;
+    color: #5fc0cd;
+    border-radius: 5px;
+}
 
 ul,
 li {
@@ -31,8 +48,7 @@ li {
     left: 50%;
     top: 50%;
     margin-left: -75px;
-    margin-top: -25px;
-    
+    margin-top: -25px; 
 }
 
 .btn-3 {
@@ -42,6 +58,12 @@ li {
 .btn-default {
     width: 102%;
     color: #b0b0b0;
+}
+
+.btn{
+    border-radius: 0;
+    border-top: transparent;
+    
 }
 
 .dropdown-1,
@@ -58,6 +80,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+    background-color: #f8fafb;
 }
 
 .footer-line {
