@@ -60,11 +60,7 @@ li {
     color: #b0b0b0;
 }
 
-.btn{
-    border-radius: 0;
-    border-top: transparent;
-    
-}
+
 
 .dropdown-1,
 .dropdown-2,
@@ -150,8 +146,12 @@ li{
 i{
     margin-right: 10px;
 }
-
-
+.span1{
+    color: red;
+}
+.span2{
+    color:#5fc0cd;
+}
 
 
 .main{
