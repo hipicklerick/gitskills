@@ -1,8 +1,3 @@
-main{
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-}
 
 header {
     position: fixed;
@@ -37,7 +32,6 @@ li {
     padding: 0;
 }
 
-
 /*去除前面的点*/
 li {
     list-style: none;
@@ -50,7 +44,6 @@ li {
     margin-left: -75px;
     margin-top: -25px; 
 }
-
 .btn-3 {
     float: right;
 }
@@ -59,16 +52,31 @@ li {
     width: 102%;
     color: #b0b0b0;
 }
-
-
-
-.dropdown-1,
-.dropdown-2,
-.dropdown-3 {
+.dropdown{
     margin-top: 50px;
+    float: left;
     width: 33%;
-    float: left;    
+   
 }
+.dropdown-toggle1{
+    border-top: none;
+    border-left: none;
+    border-radius: 0;
+}
+.dropdown-toggle2{
+    border-top: none;
+    border-radius: 0;
+}
+.dropdown-toggle3{
+    border-top: none;
+    border-right: none;
+    border-radius: 0;
+}
+
+
+
+
+
 
 
 footer {
@@ -84,7 +92,7 @@ footer {
     align-items: center;
     justify-content: space-around;
 }
-
+/*未能居中*/
 li i {
     background-image: url(./spritesheet.png);
     float: left;
@@ -136,6 +144,14 @@ li i {
 .cat-1,.cat-4,.cat-7,.cat-10,.cat-13{
     color: #999999;
 }
+.cat-2,.cat-5,.cat-8,.cat-11,.cat-14{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+
 
 li{
     margin-top: 5px;
@@ -146,13 +162,25 @@ li{
 i{
     margin-right: 10px;
 }
-.span1{
-    color: red;
-}
-.span2{
-    color:#5fc0cd;
+
+.para1{
+width: 150px;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
 }
 
+.span2{
+    color: red;  
+}
+
+.span3{
+    color:#5fc0cd;
+}
+.right{
+    flex-shrink: 0;
+}
+/*flex禁止收缩这样页面收缩式元素也能显示*/
 
 .main{
     overflow: auto;
