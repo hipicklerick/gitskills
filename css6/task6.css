@@ -162,8 +162,8 @@ footer {
     background-color: #f8fafb;
 }
 
-.footer-left,
-.footer-right,
+
+.footer-left, .footer-right
     {
     text-align: center;
 }
