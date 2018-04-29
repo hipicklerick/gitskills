@@ -170,3 +170,14 @@ footer {
     text-align: center;
     padding-top: 15px;
 }
+
+p{
+    width:200px; 
+    overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow:ellipsis;
+}
+.right{
+    flex:none;
+}
+/*价格不随页面缩放而消失*/
