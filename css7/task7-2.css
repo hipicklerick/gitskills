@@ -1,6 +1,10 @@
+/*{
+    border: 1px solid black;
+}*/
+
 body{
     background-color: #29bde0;
-    width: 100%;
+    margin: 0; /*不然不能铺满整行*/
 }
 
 header{
@@ -9,36 +13,49 @@ header{
     left: 0;
     color: white;
     width: 100%;
-    margin-top: 10px;
+    padding-top: 10px;
+}
+.flicker{
+    float: right; 
 }
 .headline{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 35px;
-    padding:0 10% 0 10%;
+    padding:0 6% 0 6%;
 }
 .menu{
     width: 25px;
 }
-.triangle{
+.header2-triangle{
         width: 0; 
         height: 0; 
         border-left: 5px solid transparent; 
         border-right: 5px solid transparent; 
-        border-top: 10px solid red; 
+        border-top: 10px solid #b9e9f5;; 
+        position: relative;
+        left: 30px;
+}
+.header2-content{
+    position: relative;
+    left: 30px;
+    color: white;
 }
 .song{
     width: 30px;
 }
 .header-2{
     margin-top: 50px;
-    background-color: red;
+    background-color: #b9e9f5;
     width: 100%;
+    height: 50px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center;  
 }
+
+
 .close{
     position:relative;
     width:0.1em;
@@ -66,41 +83,76 @@ header{
     -ms-transform: rotate(270deg);
     transform: rotate(270deg);   
    }
+/*grid布局*/
 
-.content{
+.grandpa{ 
+    background: #29bde0;
+    /*width: 90%;
+    height: 90%;*/
+    
     display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px 100px;
-    
-    
-}  
-.item1,.item2,.item3,.item4,.item5,.item6,.item7,.item8,.item9,.item10,.item11,.item12{
-    background-color: white;
-    margin: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    grid-gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-auto-flow: row;
+    margin: 10px auto;
+  }  
+      
+  .dad{
+      width: 31vw;
+      height: 31vw;
+      background: #29bde0;
+  }  
+  
+  .son{
+      width: 20vw;
+      height: 20vw;
+      background: yellow;
+      margin: 0 auto;
+      display: flex;
+      flex-direction:column;
+      background: #f5c97b;
+      border: 2px solid white;
+  }
+  .para1{
+      flex:2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .para2{
+      flex:1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #83b09a;
+      color: white;
+  }
+  
+  .bastard{
+      width: 20vw;
+      line-height: 10vw;
+      margin: 0 auto;
+      background: #29bde0;
+      display: none;
+      
+  }
+  .bastard img{
+      width: 4vw;
+      height: 4vw;
+      margin-right: 1px;
+  }
+  /*hover the son element*/
+  .dad:hover>.bastard{
+      display: block;
+  }
+  
+  
 
-.square{
-    width: 50px;
-    height: 50px;
-    background-color: tomato;
-    display: flex;
-    flex-direction: column;
-}
-.para1{
-    height: 66%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.para2{
-    text-align: center;
-    background-color: green;
-    font-size: 10px;
-    height: 34%;
-}
+
+
+
+
 footer{
    position: fixed;
    left: 0;
@@ -116,5 +168,8 @@ footer{
 button{
     width: 70%;
     height: 50%;
-    background-color: yellow;
+    background-color: #fbb435;
+    font-size: 20px;
+    color: white;
 }
+

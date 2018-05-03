@@ -1,0 +1,121 @@
+body{
+    background-color: #f0f0f0;
+}
+header{
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color:#29bde0;
+}
+
+.menu{
+    float: left;
+    width: 30px;  
+    height: 5px;  
+    border-top: 5px solid white;  
+    border-bottom: 5px solid white;  
+    background-color: white; 
+    padding: 5px 0;  
+    background-clip:content-box;  
+    margin-left: 10px;
+    margin-top: 15px; 
+}
+.flicker{
+    float: right;
+}
+.main1{
+   margin-top: 80px;
+   margin-left: 5%;
+   margin-right: 5%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding: 20px 0 20px 0;
+   background-color: #ffffff;
+   border-left:1px solid #dedede;
+   border-right:1px solid #dedede;
+   border-bottom:1px solid #dedede;
+   color: #9a9a9a;
+}
+.placeholder{
+    width:12px;
+    height:20px;
+}
+.backicon{
+    width: 10px;
+    height: 15px;
+}
+.main2{
+    
+    margin:5% 5% 8% 5%; 
+    background-color: white;   
+
+    position: relative;
+    
+    
+}
+.main2-top{
+    border-bottom: 1px solid yellow;
+    text-align: center;
+    padding: 10px 0 10px 0; 
+    margin-bottom: 20px;
+    color: #fbb435;
+}
+
+.main2-center{
+    margin:0 auto;
+    width: 70%;
+   height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color:#69dee9;
+    color: white;
+
+}
+.main2-center-content{
+    text-align: center;
+    color: #8d8d8d;
+    font-size: 10px;
+}
+.dot{
+    display: inline;
+    float: left;
+    width: 10px;
+     height: 10px;
+     background-color: #dedede;
+     -moz-border-radius: 50px;
+     -webkit-border-radius: 50px;
+    border-radius: 50px;
+    margin-right: 1px;
+}
+.dot:hover{
+    background-color: #69d1e9;
+}
+/*.dot2{
+    display: inline;
+    float: left;
+    width: 10px;
+     height: 10px;
+     background:#dedede;
+     -moz-border-radius: 50px;
+     -webkit-border-radius: 50px;
+    border-radius: 50px;
+    margin-right: 1px;
+}*/
+
+.dotline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.gotoicon{
+    right: 3%;
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    width: 20px;
+}
