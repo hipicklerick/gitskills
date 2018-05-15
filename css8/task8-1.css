@@ -237,4 +237,42 @@ li {
     
     margin-right: 3px;
 }
+/*如何学习重写*/
+
+.dot{
+    
+    width: 40px;
+    height: 40px;
+    background-color: #dedede;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 20px;
+    line-height: 40px;
+    text-align: center;/*使数字水平居中*/
+    margin: 0 auto;/*使dot水平居中*/
+}
+.dad{
+    width: 25%;
+    display: table;
+    height: 200px;
+    float: left;
+    overflow: hidden;
+    
+}
+.half-width{
+    width: 50%;
+}
+.son{
+    vertical-align: middle;
+    display: table-cell;
+    margin:0 auto;
+}
+.dot-3{
+    text-align: center;
+    margin: 0 auto;
+}
+.dot-2{
+    margin: 0 auto;
+}
+
 
