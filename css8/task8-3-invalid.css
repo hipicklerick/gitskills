@@ -1,0 +1,164 @@
+body{
+    background:#fafafa!important;
+}
+
+button{
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.button-area,.hotline{
+    display: inline;
+}
+/*导航菜单hover下划线效果*/
+.pink-row{
+    height: 5px;
+    background: pink;
+    visibility: hidden;
+}
+.navbar-right:hover .pink-row {
+    visibility: visible;
+    background-color: white;
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    text-align: center!important;
+}
+
+.hover-green:hover{
+    background: #29b078;
+    color: white;
+}
+.con-1{
+    border-bottom: 1px solid #dedede;
+    padding: 10px;
+}
+.con-2,.con-3{
+    border-bottom: 1px solid #dedede;
+    padding: 20px 0;
+}
+footer{
+    background: #29b078;
+    color: white;
+    margin-top: 50px;
+
+}
+
+/*表单样式*/
+ul,li{
+    list-style: none;
+    margin:0; 
+    padding:0; 
+}
+.jd{
+    color: gray;
+    border: 1px solid #dedede;
+    background: white;
+    margin-top: 50px!important;
+    width: 350px;
+}
+li{
+    width: 100%;
+}
+
+p{
+ display: inline-block;
+ margin:0!important;
+ padding: 5px;
+
+}
+.cat-1{
+    border: 1px solid #dedede;
+    border-bottom: transparent;
+}
+.cat-4{
+    width: 100%;
+    border: 1px solid #dedede;
+    border-bottom: transparent;
+    border-left: none;
+}
+
+.cat-1-left,.cat-1-right{
+    border: 1px solid #dedede;
+    width: 49.9999%;
+    float: left;
+    
+}
+.cat-2-left{
+width: 40%;
+border: 1px solid #dedede;
+float: left;
+}
+.cat-2-right{
+    width: 59.9%;
+    border: 1px solid #dedede;
+    float: left;
+    flex:none;
+}
+.cat-4,.cat-1,.cat-1-right,.cat-2-right{
+    border-right: none;
+    
+}
+.cat-0{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    
+}
+.hidden-1{
+    visibility: hidden;
+    border-bottom: transparent;
+}
+.hidden-2{
+    border: transparent;
+    text-align: center;
+}
+.hidden-3{
+    visibility: hidden;
+    border-top: transparent;
+}
+.cat-2-right{
+    position: relative;
+}
+.test1{
+    position: relative;
+    left: 10%;
+}
+.test2{
+    position: relative;
+    left: 30%;
+}
+.footer-line{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header{
+    background: #29b078;
+}
+
+/*hover*/
+.black-page{
+    display: none;
+    float: left;
+}
+
+.jd:hover>.black-page{
+    display: block;
+}
+
+/*header部分修改格式*/
+.navbar{
+    position: relative;
+    min-height: 50px;
+    margin-bottom:0!important;
+    border: 1px solid transparent;
+}
+
+
+
+
+
