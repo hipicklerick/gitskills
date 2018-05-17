@@ -182,14 +182,26 @@ span.cat-4-left{
 .font-end-hover{
     position: absolute;
     top: 0;
-    left: 0;
+    left: -100;
     z-index: 2;
     height: 398px;
     background:rgba(0,0,0,0.8);
     display: none;
     color: white;
     padding: 20px;
+
+  /*css3动画*/
+    animation: myfirst 0.5s;
+    width: 100%;/*impt*/
 }
+
+@keyframes myfirst
+{
+	0%   { left:-200px; top:0px;}
+	100% { left:0px; top:0px;}
+}
+
+
 .font-end:hover>.font-end-hover{
     display: block;
 }
@@ -204,6 +216,7 @@ span.cat-4-left{
 
 .hover-green:hover{
     background: #29b078;
+    text-decoration: none;
 
 }
 .font-end-hover{
@@ -212,7 +225,11 @@ span.cat-4-left{
     text-overflow: ellipsis;
 }
 
-
+/*去除超链接*/
+.underline:hover{
+    text-decoration: none;
+    color: white;
+}
 
 
 /*

@@ -1,0 +1,80 @@
+.hot-line{
+    float: left;
+}
+.log-in,.register{ 
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+header{
+    
+    background: #1d7ad9;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+}
+.log-in:hover{
+    background: white;
+    color: black;
+}
+.register:hover{
+    background: white;
+    color: black;
+}
+
+button{
+    background: white;
+    margin-left: 15px;
+    border-radius: 5px;
+    border: none;
+}
+button:hover{
+    background: #1d7ad9;
+    color: white;
+}
+
+@media (min-width: 768px)
+{
+.navbar-nav>li>button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+}
+
+@media (max-width: 768px)
+{
+button {
+    width: 100px;
+}
+}
+
+/*使得折叠icon不随着button宽度增大而左偏*/
+.navbar-toggle{
+    width: 50px;
+}
+
+footer{
+    background: #dedede;
+    width: 100%;
+}
+
+.move-1{
+    position: relative;
+    top: -40px;
+}
+.move-2{
+    position: relative;
+    top: -60px;
+}
+.move-3{
+    position: relative;
+    top: -50px;
+}
+
+@media (max-width: 768px)
+{
+.move-1 {
+    display: block;
+}
+}

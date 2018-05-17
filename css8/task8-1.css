@@ -229,6 +229,9 @@ li {
      height: 20px;
      width: 10%;
      float: left;
+
+
+
      
  }
 }
@@ -236,6 +239,7 @@ li {
 .sub-box-shadow-needed{
     
     margin-right: 3px;
+    left: 15px; /* 为了对齐*/
 }
 /*如何学习重写*/
 

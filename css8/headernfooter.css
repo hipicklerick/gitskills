@@ -75,11 +75,24 @@ body {
 }
 
 .navbar {
-    margin-bottom: 0 ;
-    padding-top: 25px;
+    margin-bottom: 0 ;    
+}
+/*增加菜单栏的行高：使用a标签‘首页’的padding顶高*/
+@media (min-width: 768px)
+{
+.navbar-nav>li>a {
+    padding-top: 30px;
     padding-bottom: 25px;
 }
-
+}
+/*header技能树logo垂直居中*/
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 50px;
+}
 
 /*header和preheader结束*/
 
