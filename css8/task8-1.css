@@ -29,7 +29,7 @@
     background: green;
 }
 
-/*栅格布局5列-图片列*/
+/*栅格布局5列-图片列
 
 .col-sm-1-5,
 .col-md-1-5 {
@@ -47,6 +47,7 @@
     .col-zdy-1-5 {
         margin-top: 3px;
         margin-bottom: 3px;
+        
     }
 }
 
@@ -57,6 +58,26 @@
         float: left;
     }
 }
+*/
+
+@media (min-width:970px){
+    .zdy-1-5{
+        float: left;
+        width: 20%;
+    }
+}
+.zdy-1-5{
+    text-align: center;
+    height: 150px;
+    line-height: 150px;
+    background: white;
+    
+}
+.zdy-1-5:hover{
+    box-shadow: -3px -3px 3px 3px #999 inset;
+}
+
+
 
 /*hover合作企业图片行*/
 
@@ -100,7 +121,7 @@ a:hover {
 
 .clear{
     clear: both;
-}
+} /*清除浮动*/
 
 ul,
 li {
@@ -279,5 +300,6 @@ li {
 .dot-2{
     margin: 0 auto;
 }
+/*去除横向滚动条*/
 
 
