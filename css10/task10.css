@@ -1,80 +1,455 @@
-.hot-line{
+.hot-line {
     float: left;
 }
-.log-in,.register{ 
+
+.log-in,
+.register {
     float: right;
     padding-left: 10px;
     padding-right: 10px;
-    
 }
-header{
-    
+
+header {
     background: #1d7ad9;
     color: white;
     height: 40px;
     line-height: 40px;
 }
-.log-in:hover{
-    background: white;
-    color: black;
-}
-.register:hover{
+
+.log-in:hover {
     background: white;
     color: black;
 }
 
-button{
+.register:hover {
+    background: white;
+    color: black;
+}
+
+button {
     background: white;
     margin-left: 15px;
     border-radius: 5px;
     border: none;
 }
-button:hover{
+
+button:hover {
     background: #1d7ad9;
     color: white;
 }
 
-@media (min-width: 768px)
-{
-.navbar-nav>li>button {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+@media (min-width: 768px) {
+    .navbar-nav>li>button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 
-@media (max-width: 768px)
-{
-button {
-    width: 100px;
-}
+@media (max-width: 768px) {
+    button {
+        width: 100px;
+    }
 }
 
 /*使得折叠icon不随着button宽度增大而左偏*/
-.navbar-toggle{
+
+.navbar-toggle {
     width: 50px;
 }
 
-footer{
-    background: #dedede;
+footer {
+    background: #f9f9f9;
     width: 100%;
+    padding-top: 60px;
+    margin-top: 50px;
 }
 
-.move-1{
+.move-1 {
     position: relative;
     top: -40px;
 }
-.move-2{
+
+.move-2 {
     position: relative;
     top: -60px;
 }
-.move-3{
+
+.move-3 {
     position: relative;
     top: -50px;
 }
 
-@media (max-width: 768px)
-{
-.move-1 {
-    display: block;
+@media (max-width: 970px) {
+    .move-3 {
+        position: relative;
+        top: -20px;
+    }
+    .move-2 {
+        position: relative;
+        top: -5px;
+    }
+    .move-1 {
+        position: relative;
+        top: 0;
+    }
 }
+
+.last-row {
+    text-align: center;
+    background: #1d7ad9;
+    color: white;
 }
+
+/*我是表单的分割线*/
+ul,li{
+    list-style: none;
+}
+ul,li{
+    padding: 0;
+    margin: 0;
+}
+.cat-1{
+    border-left:3px solid #1d7ad9;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.cat-2,.cat-4,.cat-7{
+    color: #1d7ad9;
+    background: #f4f4f4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    
+}
+.cat-2 i {
+    float: left;
+    background-image: url(./spritesheet.png);
+    width: 24px;
+    height: 20px;
+}
+/*重写split button*/
+
+.split-button{
+    float: right;
+    padding: 5px;
+    background: white;
+    
+}
+.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+    
+    background: white;
+    border-radius: 0;
+    border: 1px solid transparent;
+    
+    color: gray;
+}
+.btn-group>.btn+.dropdown-toggle {
+    background: #1d7ad9;
+    border-radius: 0;
+    border: 1px solid #dedede;
+
+}
+
+.btn-danger{
+    /* text-shadow: 0 -1px 0 rgba(0,0,0,.2); */
+    -webkit-box-shadow: inset 0 0px 0 transparent, inset 0 0px 0 transparent; 
+    /* box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 1px rgba(0,0,0,.075); */
+}
+
+/*重写split button*/
+
+.cat-3,.cat-8{
+    background: #fbfcff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.cat-4 i{
+    float: left;
+    background-image: url(./spritesheet.png);
+    width: 24px;
+    height: 22px;
+    background-position: -5px -30px;
+}
+
+input{
+    border:1px solid #dedede;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.cat-6,.cat-5{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #fbfcff; 
+}
+
+br{
+    clear: both;
+}
+
+.cat-7 i {
+    float: left;
+    background-image: url(./spritesheet.png);
+    width: 24px;
+    height: 22px;
+    background-position: -5px -60px;
+}
+.button-row{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    
+    text-align: center;
+    border: 1px solid #dedede;
+    margin-right: 0;
+    
+    
+}
+.next-step{
+    background: #e15053;
+    color: white;
+    padding:10px 20px;
+}
+/*解决清除浮动按钮菜单遮住问题*/
+
+
+/*input圆圈变色*/
+
+.double-circle{
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #e8e8e8;
+    border-radius: 100%;
+}
+input[type='radio']{
+    display: none;
+}
+/*input[:type='radio']选中type为radio的input元素，:checked选中被选中的元素，+i选中相邻兄弟元素 */
+
+input[type='radio']:checked+.double-circle {
+    padding:2px;
+    border:4px solid red;   
+}
+
+label span,label i{
+    vertical-align: middle;
+}
+
+
+li{
+    padding-left: 20px;
+    padding-right: 10px;
+    
+}
+
+/* 流程图 */
+
+.circle{
+	width:30px;
+	height:30px;
+	border-radius:30px;
+    background-color:#cccccc;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+
+.line{
+	width:60px;
+	height:5px;
+	border-radius: 3px;
+	background-color:#cccccc;
+    transform:scaleX(1.09);
+    display: inline-block;
+}
+
+.step{
+    width: 150px;
+    text-align: center;
+    color: #cccccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.section-1{
+    float: left;
+}
+
+.line-1,.circle-1{
+    background: orangered;
+}
+
+.step-1{
+    color: orangered;
+}
+.row-flowchart{
+    position: relative;
+    height: 100px;
+}
+.flowchart{
+    position: absolute;
+    right: 0;
+}
+/* 调整距离 */
+
+li i{
+    margin-right: 5px;;
+}
+/* 重写第5-6行 */
+
+
+
+li.cat-5{
+    
+    position: relative;
+    
+}
+.to-be-positioned{
+    display: inline-block;
+    position: absolute;
+    height: 44px;
+    right: 10px;
+    top: 50%;
+    margin-top: -22px;
+}
+
+
+
+li label{
+    margin-right: 20px;
+}
+
+input{
+    width: 50px;
+    margin-right: 5px;
+}
+.cat5-top{
+    padding-bottom: 10px;
+}
+.cat5-bottom{
+    padding-top: 10px;
+}
+
+@media (max-width:768px){
+    .row-flowchart{
+        display: none;
+    }
+    .cat-1{
+        white-space: nowrap;
+    }
+    .cat-3{
+        position: relative;
+        height: 150px;
+
+    }
+    .cat3-label-1{
+        position: absolute;
+        top: 5;
+        left: 20px;
+    }
+    .cat3-label-2{
+        position: absolute;
+        top: 46px;
+        left: 20px;
+    }
+    .cat3-label-3{
+        position: absolute;
+        top: 72px;
+        left: 20px;
+    }
+    .cat-3 .split-button{
+        position: absolute;
+        left: 20px;
+        top: 98px;
+    }
+
+    .cat-5{
+        position: relative;
+        height: 300px;
+    }
+    .cat5-label-1{
+        position: absolute;
+        top: 0;
+        left: 20px;
+    }
+    .cat5-label-2{
+        position: absolute;
+        top: 26px;
+        left: 20px;
+    }
+    .cat5-label-3{
+        position: absolute;
+        left: 20px;
+        top: 52px;
+    }
+    .cat5-label-4{
+        position: absolute;
+        left: 20px;
+        top: 78px;
+    }
+    .cat5-label-5{
+        position: absolute;
+        left: 20px;
+        top: 104px;
+    }
+    .cat5-label-6{
+        position: absolute;
+        left: 20px;
+        top: 130px;
+    }
+    .cat5-label-7{
+        position: absolute;
+        left: 20px;
+        top: 156px;
+    }
+    .cat5-label-8{
+        position: absolute;
+        left: 20px;
+        top: 183px;
+    }
+    .to-be-positioned{
+        width: 209px;
+        position: absolute;
+        left: 20px;
+        top: 229px;
+    }
+
+
+    .cat-8{
+        position: relative;
+        height: 200px;
+    }
+    .cat8-label-1{
+        position: absolute;
+        top: 5;
+        left: 20px;
+    }
+    .cat8-label-2{
+        position: absolute;
+        top: 46px;
+        left: 20px;
+    }
+    .cat8-label-3{
+        position: absolute;
+        top: 72px;
+        left: 20px;
+    }
+    .cat8-label-4{
+        position: absolute;
+        top: 98px;
+        left: 20px;
+    }
+    .cat8-label-5{
+        position: absolute;
+        top: 124px;
+        left: 20px;
+    }
+    .cat-8 .split-button{
+        position: absolute;
+        left: 20px;
+        top:150px;
+        
+    }
+}
+
