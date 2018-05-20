@@ -45,11 +45,6 @@ button:hover {
     }
 }
 
-@media (max-width: 768px) {
-    button {
-        width: 100px;
-    }
-}
 
 /*使得折叠icon不随着button宽度增大而左偏*/
 
@@ -61,38 +56,10 @@ footer {
     background: #f9f9f9;
     width: 100%;
     padding-top: 60px;
+    padding-bottom: 60px;
     margin-top: 50px;
 }
 
-.move-1 {
-    position: relative;
-    top: -40px;
-}
-
-.move-2 {
-    position: relative;
-    top: -60px;
-}
-
-.move-3 {
-    position: relative;
-    top: -50px;
-}
-
-@media (max-width: 970px) {
-    .move-3 {
-        position: relative;
-        top: -20px;
-    }
-    .move-2 {
-        position: relative;
-        top: -5px;
-    }
-    .move-1 {
-        position: relative;
-        top: 0;
-    }
-}
 
 .last-row {
     text-align: center;
@@ -244,53 +211,49 @@ li{
 
 /* 流程图 */
 
-.circle{
-	width:30px;
-	height:30px;
-	border-radius:30px;
-    background-color:#cccccc;
+.line{
     display: inline-block;
+    width: 5vw;
+    height: 0.5vw;
+    border-radius: 2vw;
+    background: #dedede;
+    
+}
+.circle{
+    display: inline-block;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 100%;
+    background: #dedede;
     text-align: center;
-    line-height: 30px;
+    line-height: 2vw;
     color: white;
 }
 
-.line{
-	width:60px;
-	height:5px;
-	border-radius: 3px;
-	background-color:#cccccc;
-    transform:scaleX(1.09);
-    display: inline-block;
+.section{
+    float:right;
 }
-
-.step{
-    width: 150px;
-    text-align: center;
-    color: #cccccc;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
+.content{
+    width: 5vw;
+    margin: 0 auto;
+    font-size: 10px;
 }
-.section-1{
-    float: left;
+.line-left{
+    margin-right: -10px;
 }
-
-.line-1,.circle-1{
+.line-right{
+    margin-left: -10px;
+}
+.section{
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.section-1 .line,.section-1 .circle{
     background: orangered;
 }
 
-.step-1{
-    color: orangered;
-}
-.row-flowchart{
-    position: relative;
-    height: 100px;
-}
-.flowchart{
-    position: absolute;
-    right: 0;
-}
+/* 流程图 */
+
 /* 调整距离 */
 
 li i{
@@ -332,15 +295,15 @@ input{
 }
 
 @media (max-width:768px){
-    .row-flowchart{
-        display: none;
-    }
+    
     .cat-1{
         white-space: nowrap;
     }
     .cat-3{
         position: relative;
-        height: 150px;
+        height: 73px;
+        padding-top: 0;
+        padding-bottom: 0;
 
     }
     .cat3-label-1{
@@ -350,23 +313,28 @@ input{
     }
     .cat3-label-2{
         position: absolute;
-        top: 46px;
+        top: 26px;
         left: 20px;
     }
     .cat3-label-3{
         position: absolute;
-        top: 72px;
+        top: 52px;
         left: 20px;
     }
     .cat-3 .split-button{
-        position: absolute;
-        left: 20px;
-        top: 98px;
+    display: inline-block;
+    position: absolute;
+    height: 44px;
+    right: 10px;
+    top: 50%;
+    margin-top: -22px;
     }
 
     .cat-5{
         position: relative;
-        height: 300px;
+        height: 210px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
     .cat5-label-1{
         position: absolute;
@@ -408,17 +376,13 @@ input{
         left: 20px;
         top: 183px;
     }
-    .to-be-positioned{
-        width: 209px;
-        position: absolute;
-        left: 20px;
-        top: 229px;
-    }
-
+    
 
     .cat-8{
         position: relative;
-        height: 200px;
+        height: 145px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
     .cat8-label-1{
         position: absolute;
@@ -446,10 +410,29 @@ input{
         left: 20px;
     }
     .cat-8 .split-button{
-        position: absolute;
-        left: 20px;
-        top:150px;
+        display: inline-block;
+    position: absolute;
+    height: 44px;
+    right: 10px;
+    top: 50%;
+    margin-top: -22px;
         
     }
+    
+    
 }
+/* 负边距改善流程图的间隙 */
+
+
+.qrcode{
+    float: right;
+    height: 60px;;
+}
+
+.left-box{
+    float: left;
+}
+
+
+
 
