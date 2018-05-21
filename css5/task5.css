@@ -46,17 +46,17 @@ header {
     text-align: center;
 }
 /*此处header可用float和text align实现不需要flex*/
-.header1{
+.header-left{
     float: left;
     line-height: .5rem;
     text-align: center;
 }
-.header2{
+.header-right{
     margin: 0 auto;
     line-height: .5rem;
     
 }
-.position{
+img.position{
     width: 10px;
     height: 15px;
 }
@@ -66,7 +66,7 @@ main{
 
 /*header 由于fixed absolute 属性导致脱离文档流，不存在这个元素*/
 
-.input-top {
+.intro-box {
     width: 100%;
     height: 1.5rem;
     background-image: url(./background.png);
@@ -75,18 +75,17 @@ main{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    
 }
 
 /*之前没有引用成功是因为图片文件和Html文件不在同一个文件夹*/
 
-.oval {
+.intro-left {
     width: 80px;
     height: 80px;
     margin-left: 10%;
 }
 
-.input-right {
+.intro-right {
     width: 150px;
     height: 100px;
     margin-left: 5%;
@@ -94,7 +93,7 @@ main{
     margin-top: 50px;
 }
 
-.line1 {
+.line-pre-ul {
     height: 50px;
     width: 100%;
     display: flex;
@@ -105,10 +104,8 @@ main{
     border-style: solid;
 }
 
-.blue {
-    border-width: 0 0 0 1px;
-    border-color: #5fc0cd;
-    border-style: solid;
+.line-pre-ul p {
+    border-left:1px solid #5fc0cd;
     padding-left: 15px;
     margin-left: 15px;
 }
@@ -121,33 +118,27 @@ li {
     min-height: 50px;
     /*设置最小高度使得页面缩放时文字不会溢出*/
     margin-left: 15px;
-    border-width: 0 0 1px 0;
-    border-color: grey;
-    border-style: solid;
+    border-bottom: 1px solid grey;
 }
 
 p {
     font-size: 10px;
 }
 
-.line2 {
-    border-width: 0 0 0 1px;
-    border-color: grey;
-    border-style: solid;
+.no-meal {
+    border-left: ;1px solid grey;
     padding-left: 10px;
     margin-left: 10px;
 }
 
-.rightbox {
-    border-width: 0 0 0 1px;
-    border-color: grey;
-    border-style: solid;
+.right-box {
+    border-left: 1px solid grey;
     padding: 5px 5px 5px 15px;
     margin-left: 15px;
     margin-right: 40px;
 }
 
-.left {
+.left-box{
     color: gray;
 }
 
@@ -183,10 +174,11 @@ button {
     background-color: #5fc0cd;
     font-size: 15px;    
 }
+/*禁止伸缩，注意是给子集设*/
 .intro{
     flex:none;
-/*禁止伸缩，注意给子集设*/
 }
-.red{
+
+li .red{
     color: red;
 }
