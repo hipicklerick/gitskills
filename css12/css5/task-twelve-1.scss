@@ -1,0 +1,169 @@
+@mixin formatting {
+    ul,
+    li,
+    ol,
+    dl,
+    dd,
+    dt,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    form,
+    fieldset,
+    legend,
+    img {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+$white:white;
+$bkg-color:#5fc0cd;
+$gray:gray;
+$basic-border-style: 1px solid $gray;
+@mixin fixed {
+    position: fixed;
+    left: 0px;
+    width: 100%;
+}
+
+@mixin text-center {
+    text-align: center;
+}
+
+@mixin flex-start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@mixin flex-space-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+html {
+    font-size: 625%;
+    body {
+        @include formatting;
+        font-size: .14rem;
+        background-color: $white;
+        header {
+            @include fixed;
+            top: 0px;
+            height: .5rem;
+            padding-left: 5%;
+            background-color: $bkg-color;
+            color: $white;
+            @include text-center;
+            .header-left {
+                float: left;
+                line-height: .5rem;
+                @include text-center;
+            }
+            .header-right {
+                margin: 0 auto;
+                line-height: .5rem;
+                @include text-center;
+            }
+        } //header
+        main {
+            margin-top: .5rem;
+            .intro-box {
+                width: 100%;
+                height: 1.5rem;
+                background-image: url(./background.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                @include flex-start;
+                
+            }
+            /*之前没有引用成功是因为图片文件和Html文件不在同一个文件夹*/
+            .intro-left {
+                width: 80px;
+                height: 80px;
+                margin-left: 10%;
+            }
+            .intro-right {
+                width: 150px;
+                height: 100px;
+                margin-left: 5%;
+                color: $white;
+                margin-top: 50px;
+            }
+            .line-pre-ul {
+                height: 50px;
+                width: 100%;
+                @include flex-start;
+                border-bottom: $basic-border-style;
+                p {
+                    border-left: 1px solid #5fc0cd;
+                    padding-left: 15px;
+                    margin-left: 15px;
+                }
+            } // .line-pre-ul
+            li {
+                @include flex-start;
+                /*width: 100%;不能和margin-left同事出现*/
+                min-height: 50px;
+                /*设置最小高度使得页面缩放时文字不会溢出*/
+                margin-left: 15px;
+                border-bottom: $basic-border-style;
+                .red {
+                    color: red;
+                }
+                p {
+                    font-size: 10px;
+                }
+                .no-meal {
+                    border-left: $basic-border-style;
+                    padding-left: 10px;
+                    margin-left: 10px;
+                }
+                .right-box {
+                    border-left: $basic-border-style;
+                    padding: 5px 5px 5px 15px;
+                    margin-left: 15px;
+                    margin-right: 40px;
+                }
+                .left-box {
+                    color: gray;
+                    .intro {
+                        flex: none;
+                    }
+                }
+            } //li    
+        } //main
+        footer {
+            height: 60px;
+            font-size: 15px;
+            @include flex-space-around;
+            @include fixed;
+            bottom: 0;
+            background-color: $white;
+            button {
+                width: 45%;
+                height: 40px;
+                border-radius: 5px;
+            } //button 
+            .buttonleft {
+                color: $bkg-color;
+                background-color: white;
+            }
+            .buttonright {
+                color: white;
+                background-color: $bkg-color;
+            }
+            .buttonleft,
+            .buttonright {
+                font-size: 15px;
+                border-color: $bkg-color;
+            }
+        } //footer
+    } //body
+} //html

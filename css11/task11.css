@@ -64,11 +64,9 @@ input::-webkit-input-placeholder{
     border: 0px;
     border-right: 1px solid #dedede;
     margin-right: 10px;
+    padding: 0px 10px;
 }
  
-.image-mobile,.image-lock{
-    padding: 0px 10px 0px 10px;
-}
 
 button{
     width: 100%;
