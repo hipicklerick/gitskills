@@ -26,6 +26,13 @@ header {
     color: black;
 }
 
+.nav-button{
+    
+   white-space: nowrap;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
 button {
     background: white;
     margin-left: 15px;
@@ -251,11 +258,15 @@ li{
     padding: 0;
 }
 
-.section-1 .line{
+.section:hover .line{
     background: pink;
 }
-.section-1 .line::before{
+.section:hover .line::before{
     background: pink;
+}
+
+.section:hover .menu{
+    color: pink;
 }
 
 /* 流程图 */
