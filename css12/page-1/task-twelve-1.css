@@ -3,30 +3,32 @@ html {
   font-size: 625%;
 }
 
+html html,
+html body,
+html ul,
+html li,
+html ol,
+html dl,
+html dd,
+html dt,
+html p,
+html h1,
+html h2,
+html h3,
+html h4,
+html h5,
+html h6,
+html form,
+html fieldset,
+html legend,
+html img {
+  margin: 0;
+  padding: 0;
+}
+
 html body {
   font-size: .14rem;
   background-color: white;
-}
-
-html body ul,
-html body li,
-html body ol,
-html body dl,
-html body dd,
-html body dt,
-html body p,
-html body h1,
-html body h2,
-html body h3,
-html body h4,
-html body h5,
-html body h6,
-html body form,
-html body fieldset,
-html body legend,
-html body img {
-  margin: 0;
-  padding: 0;
 }
 
 html body header {
