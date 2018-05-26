@@ -1,27 +1,27 @@
 html {
     font-size: 625%;
 }
+
 /*字体放大了6.25倍 1px=0.01rem*/
 
 $bkg-color:#eff0f4;
-$blue:#5fc0cd;;
+$blue:#5fc0cd;
 $white:#ffffff;
 $black:black;
 $gray:#dedede;
 $adapation:100%;
-
-@mixin text-center{
+// text-align:center
+@mixin text-center {
     text-align: center;
 }
 
-@mixin flex-btw{
-
+@mixin flex-btw {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-@mixin flex-start{
+@mixin flex-start {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -32,64 +32,65 @@ body {
     background-color: $bkg-color;
     margin-left: 0;
     margin-right: 0;
-    
-header {
-    @include flex-btw;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: .5rem ; 
-    background-color: $blue;
-    color: $white;
-}
-.header-left{
-    margin-left: 10px;
-}
-.header-right{
-    margin-right: 10px;
-}
-main {
-    margin-top: .6rem;
-}
-/*header 由于fixed absolute 属性导致脱离文档流，不存在这个元素*/
-input{
-    border:none;
-    background-color: $white;
-    color:$black;
-}
-.input-top,.input-bottom{
-    @include flex-start;
-    background-color:$white;
-    width: $adapation;
-    height: .5rem;
-    margin-top: .1rem; 
-    @include text-center;
-    img{
-    width: 15px;
-    height:22px;
+    header {
+        @include flex-btw;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: .5rem;
+        background-color: $blue;
+        color: $white;
     }
-    .image-mobile,.image-lock{
-        width: 50px;
-        border: 0px;
-        border-right: 1px solid $gray;
+    .header-left {
+        margin-left: 10px;
+    }
+    .header-right {
         margin-right: 10px;
-        padding: 0px 10px;
     }
-}
-button{
-    width: $adapation;
-    height: .5rem;
-    margin-top: .5rem;
-    background-color: $blue;
-    color:$white;
-    font-size: .14rem;
-    border: none; /*兼容firefox*/
-   
-}
-
-p{
-    color: #5fc0cd;
-    float:right;
+    main {
+        margin-top: .6rem;
+    
+    /*header 由于fixed absolute 属性导致脱离文档流，不存在这个元素*/
+    input {
+        border: none;
+        background-color: $white;
+        color: $black;
+    }
+    .input-top,
+    .input-bottom {
+        @include flex-start;
+        background-color: $white;
+        width: $adapation;
+        height: .5rem;
+        margin-top: .1rem;
+        @include text-center;
+        img {
+            width: 15px;
+            height: 22px;
+        }
+        .image-mobile,
+        .image-lock {
+            width: 50px;
+            border: 0px;
+            border-right: 1px solid $gray;
+            margin-right: 10px;
+            padding: 0px 10px;
+        }
+    }
+    button {
+        width: $adapation;
+        height: .5rem;
+        margin-top: .5rem;
+        background-color: $blue;
+        color: $white;
+        font-size: .14rem;
+        border: none;
+        /*兼容firefox*/
+    }
+    p {
+        color: #5fc0cd;
+        float: right;
+    }
 }
 }
