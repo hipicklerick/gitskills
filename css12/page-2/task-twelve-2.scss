@@ -1,0 +1,215 @@
+@mixin fixed{
+    position: fixed;
+    left: 0;
+    }
+    
+    $adpation:100%;
+    $light-blue:#5fc0cd;
+    $white:white;
+    $dark-blue:#55a8b3;
+    $black:black;
+    
+    @mixin flex-space-around{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    }
+    
+    @mixin basic-btn-style{
+    display: inline;
+    padding: 5px 20px;
+    border-radius: 5px;
+    }
+
+    @mixin menu-border-style{
+        border-left: none;
+        border-right: none;
+    }
+    
+    html{
+    
+    ul,
+    li,
+    p,
+    {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+    
+    header{
+    @include fixed;
+    top: 0;
+    width: $adpation;
+    height: 50px;
+    @include flex-space-around;
+    background-color: $light-blue;
+    
+    .header-center-left {
+    @include basic-btn-style;
+    background-color: $dark-blue;
+    color: $white;
+    }
+    
+    .header-center-right {
+    @include basic-btn-style;
+    position: relative;
+    right: 10px;
+    background-color: $white;
+    color: $light-blue;
+    }
+    
+    .header-right {
+    width: 25px;
+    }
+}//header
+    nav {
+    width: $adpation;
+    @include fixed;
+    top: 0;
+    .menu{
+    color:black;
+    box-sizing: border-box;
+    border:1px solid #dedede;
+    background: white;
+    width: 33.3333%;
+    text-align: center;
+    float: right;
+    margin-top: 50px;
+    padding: 0;
+
+    
+
+
+
+    a{
+    text-decoration: none;
+    color: $black;
+    }
+    .menu-right,.menu-left{
+        @include menu-border-style();
+    }
+    .drop-down{
+        position: relative;
+        margin: 10px 0;
+        
+
+        &:hover .drop-down-content{
+            display: block;
+        }
+
+        .location{
+            &::after{
+            content:"";
+            width:0; 
+            height:0; 
+            display: inline-block;
+            border-top: 5px solid black;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom:  5px solid transparent;
+            margin-left: 5px;
+            }// ::after
+        }//location
+
+
+        .drop-down-content {
+            
+            display: none;
+            position: absolute;
+            width: $adpation;
+            box-sizing: border-box;
+            background: $white;
+            border: 1px solid #dedede;
+            border-radius: 5px;
+            margin-top: 15px;
+            box-shadow: 1px 1px 1px 1px #dedede;
+        li{
+                margin:10px 0;
+                font-size: 15px;
+            }
+
+        }//drop-down-content
+    }//drop-down
+
+    }//menu
+        
+    }//nav
+        
+
+    main {
+        margin-top: 110px;
+        margin-bottom: 110px;
+        p{
+            width:200px; 
+            overflow:hidden; 
+            white-space:nowrap; 
+            text-overflow:ellipsis;
+        }
+
+        li{
+
+            i{
+                background-image: url(./spritesheet.png);
+                float: left;
+                width: 24px;
+                height: 23px;
+                margin-right: 5px;
+            }
+            
+            p{
+                margin-left: 26px;
+            }
+
+        }//li
+        .cat{
+            border-bottom: 1px solid #dedede;
+            padding: 10px 0;
+        
+        .cat-1{
+            
+            background-position: 0 0;
+            padding: 0 20px;
+        }
+        
+        .cat-2 {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            padding: 0 20px;
+            div{
+                    flex:none;
+            }
+        }
+        .cat-2-center {
+            color: red;
+        }
+        
+        .cat-2-right {
+            color: $light-blue;
+        }
+        
+        .cat-3  {
+            i{
+            background-position: 0 -24px;
+            }
+            padding: 0 20px;
+        }
+    }//cat
+    }//main
+    
+    footer {
+        @include flex-space-around;
+        @include fixed;
+        bottom: 0;
+        width: $adpation;
+        background-color: #f8fafb;
+    }
+    
+    .footer-left, .footer-right{
+    text-align: center;
+    padding-top: 15px;
+}
+    
+    
+}//html

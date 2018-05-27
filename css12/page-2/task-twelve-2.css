@@ -1,0 +1,186 @@
+html ul,
+html li,
+html p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #5fc0cd;
+}
+
+html header .header-center-left {
+  display: inline;
+  padding: 5px 20px;
+  border-radius: 5px;
+  background-color: #55a8b3;
+  color: white;
+}
+
+html header .header-center-right {
+  display: inline;
+  padding: 5px 20px;
+  border-radius: 5px;
+  position: relative;
+  right: 10px;
+  background-color: white;
+  color: #5fc0cd;
+}
+
+html header .header-right {
+  width: 25px;
+}
+
+html nav {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+html nav .menu {
+  color: black;
+  box-sizing: border-box;
+  border: 1px solid #dedede;
+  background: white;
+  width: 33.3333%;
+  text-align: center;
+  float: right;
+  margin-top: 50px;
+  padding: 0;
+}
+
+html nav .menu a {
+  text-decoration: none;
+  color: black;
+}
+
+html nav .menu .menu-right, html nav .menu .menu-left {
+  border-left: none;
+  border-right: none;
+}
+
+html nav .menu .drop-down {
+  position: relative;
+  margin: 10px 0;
+}
+
+html nav .menu .drop-down:hover .drop-down-content {
+  display: block;
+}
+
+html nav .menu .drop-down .location::after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: inline-block;
+  border-top: 5px solid black;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  margin-left: 5px;
+}
+
+html nav .menu .drop-down .drop-down-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  background: white;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  margin-top: 15px;
+  box-shadow: 1px 1px 1px 1px #dedede;
+}
+
+html nav .menu .drop-down .drop-down-content li {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+html main {
+  margin-top: 110px;
+  margin-bottom: 110px;
+}
+
+html main p {
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+html main li i {
+  background-image: url(./spritesheet.png);
+  float: left;
+  width: 24px;
+  height: 23px;
+  margin-right: 5px;
+}
+
+html main li p {
+  margin-left: 26px;
+}
+
+html main .cat {
+  border-bottom: 1px solid #dedede;
+  padding: 10px 0;
+}
+
+html main .cat .cat-1 {
+  background-position: 0 0;
+  padding: 0 20px;
+}
+
+html main .cat .cat-2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 0 20px;
+}
+
+html main .cat .cat-2 div {
+  flex: none;
+}
+
+html main .cat .cat-2-center {
+  color: red;
+}
+
+html main .cat .cat-2-right {
+  color: #5fc0cd;
+}
+
+html main .cat .cat-3 {
+  padding: 0 20px;
+}
+
+html main .cat .cat-3 i {
+  background-position: 0 -24px;
+}
+
+html footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8fafb;
+}
+
+html .footer-left, html .footer-right {
+  text-align: center;
+  padding-top: 15px;
+}
+/*# sourceMappingURL=task-twelve-2.css.map */
