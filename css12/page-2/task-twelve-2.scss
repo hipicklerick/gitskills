@@ -1,13 +1,17 @@
-@mixin fixed{
-    position: fixed;
-    left: 0;
-    }
+
     
     $adpation:100%;
     $light-blue:#5fc0cd;
     $white:white;
     $dark-blue:#55a8b3;
     $black:black;
+    $basic-border-style: 1px solid #dedede;
+    $basic-unit:5px;
+
+    @mixin fixed{
+    position: fixed;
+    left: 0;
+    }
     
     @mixin flex-space-around{
     display: flex;
@@ -18,12 +22,32 @@
     @mixin basic-btn-style{
     display: inline;
     padding: 5px 20px;
-    border-radius: 5px;
+    @include rounded-corner;
+    }
+
+
+    @mixin header-center-right-position{
+    position: relative;
+    right: 10px;
     }
 
     @mixin menu-border-style{
         border-left: none;
         border-right: none;
+    }
+
+    @mixin rounded-corner{
+        border-radius: 5px;
+    }
+
+    @mixin triangle{
+        width:0; 
+            height:0; 
+            display: inline-block;
+            border-top: 5px solid black;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom:  5px solid transparent;
     }
     
     html{
@@ -41,7 +65,7 @@
     @include fixed;
     top: 0;
     width: $adpation;
-    height: 50px;
+    height: ($basic-unit*10);
     @include flex-space-around;
     background-color: $light-blue;
     
@@ -53,14 +77,13 @@
     
     .header-center-right {
     @include basic-btn-style;
-    position: relative;
-    right: 10px;
+    @include header-center-right-position;
     background-color: $white;
     color: $light-blue;
     }
     
     .header-right {
-    width: 25px;
+    width: ($basic-unit*5);
     }
 }//header
     nav {
@@ -68,18 +91,15 @@
     @include fixed;
     top: 0;
     .menu{
-    color:black;
+    color:$black;
     box-sizing: border-box;
-    border:1px solid #dedede;
+    border: $basic-border-style;
     background: white;
-    width: 33.3333%;
+    width: (100%/3);
     text-align: center;
     float: right;
-    margin-top: 50px;
+    margin-top: ($basic-unit*10);
     padding: 0;
-
-    
-
 
 
     a{
@@ -91,7 +111,7 @@
     }
     .drop-down{
         position: relative;
-        margin: 10px 0;
+        margin: ($basic-unit*2) 0;
         
 
         &:hover .drop-down-content{
@@ -101,14 +121,8 @@
         .location{
             &::after{
             content:"";
-            width:0; 
-            height:0; 
-            display: inline-block;
-            border-top: 5px solid black;
-            border-left: 5px solid transparent;
-            border-right: 5px solid transparent;
-            border-bottom:  5px solid transparent;
-            margin-left: 5px;
+            @include triangle;
+            margin-left: $basic-unit;
             }// ::after
         }//location
 
@@ -120,13 +134,13 @@
             width: $adpation;
             box-sizing: border-box;
             background: $white;
-            border: 1px solid #dedede;
-            border-radius: 5px;
-            margin-top: 15px;
+            border: $basic-border-style;
+            @include rounded-corner;
+            margin-top: ($basic-unit*3);
             box-shadow: 1px 1px 1px 1px #dedede;
         li{
-                margin:10px 0;
-                font-size: 15px;
+                margin:$basic-unit*2 0;
+                font-size: ($basic-unit*3);
             }
 
         }//drop-down-content
@@ -138,10 +152,10 @@
         
 
     main {
-        margin-top: 110px;
-        margin-bottom: 110px;
+        margin-top: ($basic-unit*22);
+        margin-bottom: ($basic-unit*22);
         p{
-            width:200px; 
+            width:$basic-unit*40; 
             overflow:hidden; 
             white-space:nowrap; 
             text-overflow:ellipsis;
@@ -152,31 +166,31 @@
             i{
                 background-image: url(./spritesheet.png);
                 float: left;
-                width: 24px;
+                width: $basic-unit-1 ;
                 height: 23px;
-                margin-right: 5px;
+                margin-right: $basic-unit;
             }
             
             p{
-                margin-left: 26px;
+                margin-left: $basic-unit+1 ;
             }
 
         }//li
         .cat{
-            border-bottom: 1px solid #dedede;
-            padding: 10px 0;
+            border-bottom: $basic-border-style;
+            padding: $basic-unit*2 0;
         
         .cat-1{
             
             background-position: 0 0;
-            padding: 0 20px;
+            padding: 0 $basic-unit*4;
         }
         
         .cat-2 {
             display: flex;
             justify-content: space-between;
-            margin: 10px 0;
-            padding: 0 20px;
+            margin: $basic-unit*2 0;
+            padding: 0 $basic-unit*4;
             div{
                     flex:none;
             }
@@ -193,7 +207,7 @@
             i{
             background-position: 0 -24px;
             }
-            padding: 0 20px;
+            padding: 0 $basic-unit*4;
         }
     }//cat
     }//main
@@ -208,7 +222,7 @@
     
     .footer-left, .footer-right{
     text-align: center;
-    padding-top: 15px;
+    padding-top: $basic-unit*3;
 }
     
     
