@@ -5,15 +5,7 @@
     li,
     ol,
     dl,
-    dd,
-    dt,
     p,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
     form,
     fieldset,
     legend,
@@ -49,9 +41,12 @@ $basic-border-style: 1px solid $gray;
     justify-content: space-around;
 }
 
+
 html {
     font-size: 625%;
     @include formatting;
+}
+
     body {
         
         font-size: .14rem;
@@ -60,20 +55,18 @@ html {
             @include fixed;
             top: 0px;
             height: .5rem;
-            padding-left: 5%;
+            padding: 0 5px;
             background-color: $bkg-color;
             color: $white;
-            @include text-center;
-            .header-left {
-                float: left;
-                line-height: .5rem;
-                @include text-center;
+            line-height: .5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            .header-right{
+                visibility: hidden;
             }
-            .header-right {
-                margin: 0 auto;
-                line-height: .5rem;
-                @include text-center;
-            }
+           
         } //header
         main {
             margin-top: .5rem;
@@ -137,9 +130,8 @@ html {
                 }
                 .left-box {
                     color: gray;
-                    .intro {
-                        flex: none;
-                    }
+                    flex: none;
+                    
                 }
             } //li    
         } //main
@@ -154,6 +146,8 @@ html {
                 width: 45%;
                 height: 40px;
                 border-radius: 5px;
+                border:1px solid transparent;
+
             } //button 
             .buttonleft {
                 color: $bkg-color;
@@ -170,4 +164,3 @@ html {
             }
         } //footer
     } //body
-} //html
