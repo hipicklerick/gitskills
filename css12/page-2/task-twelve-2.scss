@@ -1,5 +1,4 @@
 
-    
     $adpation:100%;
     $light-blue:#5fc0cd;
     $white:white;
@@ -50,6 +49,10 @@
             border-bottom:  5px solid transparent;
     }
     
+    *{
+        font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+    }
+
     html{
     
     ul,
@@ -82,11 +85,17 @@
     color: $light-blue;
     }
     
-    .header-right {
+    .header-left,.header-right{
     width: ($basic-unit*5);
     }
-}//header
+    .header-left{
+        visibility: hidden;
+    }
+    }//header
+
+
     nav {
+        font-size: ($basic-unit*2+2);
     width: $adpation;
     @include fixed;
     top: 0;
@@ -140,7 +149,7 @@
             box-shadow: 1px 1px 1px 1px #dedede;
         li{
                 margin:$basic-unit*2 0;
-                font-size: ($basic-unit*3);
+                font-size: ($basic-unit*2+2);;
             }
 
         }//drop-down-content
@@ -152,7 +161,8 @@
         
 
     main {
-        margin-top: ($basic-unit*22);
+        font-size: ($basic-unit*2+2);
+        margin-top: ($basic-unit*19);
         margin-bottom: ($basic-unit*22);
         p{
             width:$basic-unit*40; 
@@ -166,7 +176,7 @@
             i{
                 background-image: url(./spritesheet.png);
                 float: left;
-                width: $basic-unit-1 ;
+                width: ($basic-unit*5-1) ;
                 height: 23px;
                 margin-right: $basic-unit;
             }
@@ -213,17 +223,22 @@
     }//main
     
     footer {
+        font-size: ($basic-unit*2+2);
         @include flex-space-around;
         @include fixed;
         bottom: 0;
         width: $adpation;
         background-color: #f8fafb;
-    }
+    
     
     .footer-left, .footer-right{
     text-align: center;
     padding-top: $basic-unit*3;
-}
-    
+    }
+    .footer1,.footer2,.footer3{
+        width: $basic-unit*7;
+    }
+
+}  //footer  
     
 }//html

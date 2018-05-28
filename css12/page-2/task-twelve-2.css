@@ -1,3 +1,7 @@
+* {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+}
+
 html ul,
 html li,
 html p {
@@ -16,7 +20,6 @@ html header {
   align-items: center;
   justify-content: space-around;
   background-color: #5fc0cd;
-  
 }
 
 html header .header-center-left {
@@ -37,11 +40,16 @@ html header .header-center-right {
   color: #5fc0cd;
 }
 
-html header .header-right {
+html header .header-left, html header .header-right {
   width: 25px;
 }
 
+html header .header-left {
+  visibility: hidden;
+}
+
 html nav {
+  font-size: 12px;
   width: 100%;
   position: fixed;
   left: 0;
@@ -53,7 +61,7 @@ html nav .menu {
   box-sizing: border-box;
   border: 1px solid #dedede;
   background: white;
-  width: 33.3333%;
+  width: 33.33333%;
   text-align: center;
   float: right;
   margin-top: 50px;
@@ -105,11 +113,12 @@ html nav .menu .drop-down .drop-down-content {
 
 html nav .menu .drop-down .drop-down-content li {
   margin: 10px 0;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 html main {
-  margin-top: 110px;
+  font-size: 12px;
+  margin-top: 95px;
   margin-bottom: 110px;
 }
 
@@ -129,7 +138,7 @@ html main li i {
 }
 
 html main li p {
-  margin-left: 26px;
+  margin-left: 6px;
 }
 
 html main .cat {
@@ -170,6 +179,7 @@ html main .cat .cat-3 i {
 }
 
 html footer {
+  font-size: 12px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -180,8 +190,12 @@ html footer {
   background-color: #f8fafb;
 }
 
-html .footer-left, html .footer-right {
+html footer .footer-left, html footer .footer-right {
   text-align: center;
   padding-top: 15px;
+}
+
+html footer .footer1, html footer .footer2, html footer .footer3 {
+  width: 35px;
 }
 /*# sourceMappingURL=task-twelve-2.css.map */
