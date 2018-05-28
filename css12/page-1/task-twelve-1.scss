@@ -51,6 +51,8 @@ html {
         
         font-size: .14rem;
         background-color: $white;
+    } //body
+
         header {
             @include fixed;
             top: 0px;
@@ -68,9 +70,12 @@ html {
             }
            
         } //header
+
         main {
             margin-top: .5rem;
-            
+            .position{
+                width:15px;
+            }
             .intro-box {
                 width: 100%;
                 height: 1.5rem;
@@ -86,13 +91,21 @@ html {
                 height: 80px;
                 margin-left: 10%;
             }
-            .intro-right {
+            .intro-right-top {
                 width: 150px;
                 height: 100px;
                 margin-left: 5%;
                 color: $white;
                 margin-top: 50px;
             }
+            .intro-right-bottom{
+                display: flex;
+                align-items: center;
+                
+            }
+
+
+
             .line-pre-ul {
                 height: 50px;
                 width: 100%;
@@ -123,15 +136,16 @@ html {
                     margin-left: 10px;
                 }
                 .right-box {
-                    border-left: $basic-border-style;
-                    padding: 5px 5px 5px 15px;
+                    
+                    padding: 5px 5px 5px 0;
                     margin-left: 15px;
-                    margin-right: 40px;
+                    margin-right: 15px;
                 }
                 .left-box {
                     color: gray;
                     flex: none;
-                    
+                    border-right: $basic-border-style;
+                    padding-right: 15px;
                 }
             } //li    
         } //main
@@ -163,4 +177,4 @@ html {
                 border-color: $bkg-color;
             }
         } //footer
-    } //body
+    

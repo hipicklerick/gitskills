@@ -10,7 +10,7 @@ html p {
   list-style: none;
 }
 
-html header {
+header {
   position: fixed;
   left: 0;
   top: 0;
@@ -22,7 +22,7 @@ html header {
   background-color: #5fc0cd;
 }
 
-html header .header-center-left {
+header .header-center-left {
   display: inline;
   padding: 5px 20px;
   border-radius: 5px;
@@ -30,7 +30,7 @@ html header .header-center-left {
   color: white;
 }
 
-html header .header-center-right {
+header .header-center-right {
   display: inline;
   padding: 5px 20px;
   border-radius: 5px;
@@ -40,15 +40,15 @@ html header .header-center-right {
   color: #5fc0cd;
 }
 
-html header .header-left, html header .header-right {
+header .header-left, header .header-right {
   width: 25px;
 }
 
-html header .header-left {
+header .header-left {
   visibility: hidden;
 }
 
-html nav {
+nav {
   font-size: 12px;
   width: 100%;
   position: fixed;
@@ -56,7 +56,7 @@ html nav {
   top: 0;
 }
 
-html nav .menu {
+nav .menu {
   color: black;
   box-sizing: border-box;
   border: 1px solid #dedede;
@@ -68,26 +68,26 @@ html nav .menu {
   padding: 0;
 }
 
-html nav .menu a {
+nav .menu a {
   text-decoration: none;
   color: black;
 }
 
-html nav .menu .menu-right, html nav .menu .menu-left {
+nav .menu .menu-right, nav .menu .menu-left {
   border-left: none;
   border-right: none;
 }
 
-html nav .menu .drop-down {
+nav .menu .drop-down {
   position: relative;
   margin: 10px 0;
 }
 
-html nav .menu .drop-down:hover .drop-down-content {
+nav .menu .drop-down:hover .drop-down-content {
   display: block;
 }
 
-html nav .menu .drop-down .location::after {
+nav .menu .drop-down .location::after {
   content: "";
   width: 0;
   height: 0;
@@ -99,7 +99,7 @@ html nav .menu .drop-down .location::after {
   margin-left: 5px;
 }
 
-html nav .menu .drop-down .drop-down-content {
+nav .menu .drop-down .drop-down-content {
   display: none;
   position: absolute;
   width: 100%;
@@ -111,74 +111,75 @@ html nav .menu .drop-down .drop-down-content {
   box-shadow: 1px 1px 1px 1px #dedede;
 }
 
-html nav .menu .drop-down .drop-down-content li {
+nav .menu .drop-down .drop-down-content li {
   margin: 10px 0;
   font-size: 12px;
 }
 
-html main {
+main {
   font-size: 12px;
   margin-top: 95px;
   margin-bottom: 110px;
 }
 
-html main p {
+main p {
   width: 200px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-html main li i {
+main li i {
   background-image: url(./spritesheet.png);
   float: left;
   width: 24px;
-  height: 23px;
+  height: 23.2px;
   margin-right: 5px;
+  transform: scale(0.85, 0.85);
 }
 
-html main li p {
+main li p {
   margin-left: 6px;
 }
 
-html main .cat {
+main .cat {
   border-bottom: 1px solid #dedede;
   padding: 10px 0;
 }
 
-html main .cat .cat-1 {
+main .cat .cat-1 {
   background-position: 0 0;
   padding: 0 20px;
 }
 
-html main .cat .cat-2 {
+main .cat .cat-2 {
   display: flex;
   justify-content: space-between;
   margin: 10px 0;
   padding: 0 20px;
 }
 
-html main .cat .cat-2 div {
+main .cat .cat-2 div {
   flex: none;
 }
 
-html main .cat .cat-2-center {
+main .cat .cat-2-center {
   color: red;
 }
 
-html main .cat .cat-2-right {
+main .cat .cat-2-right {
   color: #5fc0cd;
 }
 
-html main .cat .cat-3 {
+main .cat .cat-3 {
   padding: 0 20px;
 }
 
-html main .cat .cat-3 i {
+main .cat .cat-3 i {
   background-position: 0 -24px;
 }
 
-html footer {
+footer {
   font-size: 12px;
   display: flex;
   align-items: center;
@@ -190,12 +191,16 @@ html footer {
   background-color: #f8fafb;
 }
 
-html footer .footer-left, html footer .footer-right {
+footer .footer-left, footer .footer-right {
   text-align: center;
   padding-top: 15px;
 }
 
-html footer .footer1, html footer .footer2, html footer .footer3 {
+footer .footer1, footer .footer3 {
   width: 35px;
+}
+
+footer .footer2 {
+  width: 60px;
 }
 /*# sourceMappingURL=task-twelve-2.css.map */
