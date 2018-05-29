@@ -117,6 +117,8 @@ html {
                     margin-left: 15px;
                 }
             } // .line-pre-ul
+            ul{
+                margin-bottom: 30px;
             li {
                 @include flex-start;
                 /*width: 100%;不能和margin-left同事出现*/
@@ -147,9 +149,11 @@ html {
                     border-right: $basic-border-style;
                     padding-right: 15px;
                 }
-            } //li    
+            } //li   
+        }//ul
         } //main
         footer {
+            
             height: 60px;
             font-size: 15px;
             @include flex-space-around;
