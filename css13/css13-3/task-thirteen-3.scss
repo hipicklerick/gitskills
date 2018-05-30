@@ -15,13 +15,21 @@ header{
     @include fixed;
     top: 0;
     height: 50px;
-    @include flex-around;
+    @include flex-between;
     color: white;
     background-color: $blue-p2-p3;
     img{
         width: 25px;
-        height: 25px; 
+        height: 25px;  
+         
     }
+    .header-left{
+        padding-left: 20px;
+    }
+    .header-right{
+        padding-right: 20px;
+    }
+    
 }
 
 ul{
@@ -86,8 +94,7 @@ ul{
         .cat-10{
             padding-bottom: 10px;
             border-bottom: 1px solid #dedede;
-        }
-    
+        }    
 }//ul
 
 

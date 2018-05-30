@@ -17,7 +17,7 @@ header {
   top: 0;
   height: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   color: white;
   background-color: #29bde0;
@@ -26,6 +26,14 @@ header {
 header img {
   width: 25px;
   height: 25px;
+}
+
+header .header-left {
+  padding-left: 20px;
+}
+
+header .header-right {
+  padding-right: 20px;
 }
 
 ul {
