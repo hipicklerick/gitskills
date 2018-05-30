@@ -1,0 +1,29 @@
+
+
+$blue-p2-p3:#29bde0;
+$light-orange:#f5c97b;
+$dark-orange:#fbb435;
+
+@mixin fixed{
+    position: fixed;
+    left: 0;
+    width: 100%;
+}
+
+@mixin flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

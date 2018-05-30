@@ -29,15 +29,25 @@ header{
 }
 .menu{
     width: 25px;
-}
+}.close{
+    position:relative;
+    width:0.1em;
+    height:1.5em;
+    background:white;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: inline-block;
+   }
 .header2-triangle{
         width: 0; 
         height: 0; 
         border-left: 5px solid transparent; 
         border-right: 5px solid transparent; 
         border-top: 10px solid #b9e9f5;; 
-        position: relative;
-        
+        position: relative; 
         position: fixed;
         top: 0;
         left: 30px;
@@ -67,18 +77,7 @@ img.song{
     justify-content: space-around;
     align-items: center;  
 }
-.close{
-    position:relative;
-    width:0.1em;
-    height:1.5em;
-    background:white;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    display: inline-block;
-   }
+
 
 .close:after{
     content: "";
@@ -123,6 +122,7 @@ img.song{
       display: flex;
       flex-direction:column;
       background: #f5c97b;
+      
       border: 2px solid white;
   }
 .para1{
@@ -146,10 +146,11 @@ img.song{
       margin: 0 auto;
       background: #29bde0;
       display: none; 
+      text-align: center;
   }
 .bastard img{
-      width: 23%;
-      height: 23%;
+      width: 15%;
+      height: 15%;
       margin-right: 1px;
   }
   /*hover the son element*/
@@ -158,7 +159,6 @@ img.song{
 }
   
   
-
 
 footer{
    position: fixed;
@@ -178,5 +178,6 @@ button{
     background-color: #fbb435;
     font-size: 20px;
     color: white;
+    border: 1px solid transparent;
 }
 
