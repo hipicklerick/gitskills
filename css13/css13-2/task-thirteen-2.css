@@ -80,6 +80,12 @@ header .headline .close:after {
   border-right: 5px solid transparent;
   border-top: 10px solid #b9e9f5;
   position: relative;
+}
+
+.traingle-dad {
+  width: 100%;
+  background: #29bde0;
+  height: 20px;
   position: fixed;
   top: 0;
   left: 30px;
@@ -88,12 +94,14 @@ header .headline .close:after {
 
 .header2-content {
   position: relative;
+  width: 100%;
   left: 30px;
   color: white;
   position: fixed;
   top: 0;
   left: 30px;
   margin-top: 110px;
+  background: #29bde0;
 }
 
 .grandpa {

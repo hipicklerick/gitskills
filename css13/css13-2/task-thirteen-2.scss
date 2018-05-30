@@ -72,20 +72,29 @@ border-left: 5px solid transparent;
 border-right: 5px solid transparent;
 border-top:10px solid #b9e9f5;
 position: relative;
-position: fixed;
+
+}//triangle
+
+.traingle-dad{
+    width: 100%;
+    background: $blue-p2-p3;
+    height: 20px;
+    position: fixed;
 top: 0;
 left: 30px;
 margin-top: 100px;
-}//triangle
+}
 
 .header2-content{
 position: relative;
+width: 100%;
 left: 30px;
 color: white;
 position: fixed;
 top: 0;
 left: 30px;
 margin-top: 110px;
+background: $blue-p2-p3;
 }
 
 

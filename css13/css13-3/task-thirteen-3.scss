@@ -87,14 +87,13 @@ ul{
             padding-bottom: 10px;
             border-bottom: 1px solid #dedede;
         }
-
     
 }//ul
 
 
 footer{
     @include fixed;
-    left: 0;
+    bottom: 0;
     @include flex-around;
     padding: 20px 0; 
     background-image: url(./task7-3-footerbkg.png);
