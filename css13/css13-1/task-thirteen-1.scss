@@ -1,0 +1,111 @@
+@import "public.scss";
+
+$dark-gray:#9a9a9a;
+$light-gray:#dedede;
+$white:#ffffff;
+$basic-border-style:1px solid #dedede;
+
+body{
+    background:$light-gray;
+}
+.tab-bar {background-color: #5bc0de; }
+.tab-bar .left-small {border: none; }
+
+.left-off-canvas-menu {background-color: white; }
+.left-off-canvas-menu .test li {
+        @include flex-between;
+        padding: 10px 15px;
+        border-bottom: #bfc0c1 1px solid;
+        line-height: 16px;
+        font-size: 16px;
+        letter-spacing: 2px;
+        color: #34bddd; }
+
+        .left-off-canvas-menu .test li .arrow2 {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-top: 3px solid  #34bddd;
+        border-right: 3px solid  #34bddd;
+        transform: rotate(45deg); } 
+
+main{
+    .main1{
+        margin: 80px 5% 0 5%;
+        @include flex-around;
+        padding: 20px 0 ;
+        background-color: $white;
+        border:$basic-border-style;
+        
+        color:$dark-gray;
+        .placeholder{
+            width:12px;
+            height:20px;
+        }
+        .backicon{
+            width: 10px;
+            height: 15px;
+        }
+     }//main1
+     .main2{
+        margin:5% 5% 8% 5%; 
+        background-color: white;   
+        position: relative;
+
+        .main2-top{
+            border-bottom: 1px solid yellow;
+            text-align: center;
+            padding: 10px 0; 
+            margin: 20px 0;
+            color: $dark-orange;
+            height: 40px;
+        }
+        
+        
+        .main2-center{
+            margin:0 auto;
+            width: 70%;
+           height: 50px;
+            @include flex-center;
+            background-color:#69dee9;
+            color: white;
+        }
+        .main2-center-content{
+            text-align: center;
+            color: #8d8d8d;
+            font-size: 10px;
+        }
+    }//main2
+    .dotline{
+        @include flex-center;
+        margin: 20px 0;
+        padding-bottom: 10px;
+        .dot{
+            display: inline-block;
+            width: 10px;
+             height: 10px;
+             background-color: $light-gray;
+             -moz-border-radius: 50px;
+             -webkit-border-radius: 50px;
+            border-radius: 50px;
+            margin-right: 1px;
+            &:hover{
+                    background-color: #69d1e9;
+                }
+        }//dot
+    }//dotline
+
+    .gotoicon{
+        right: 3%;
+        position: absolute;
+        top: 50%;
+        transform:translateY(-50%);
+        width: 10px;
+        height: 70px;
+        padding: 20px 0;
+    }
+
+
+}//main
+
+

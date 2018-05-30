@@ -1,30 +1,42 @@
 body{
     background-color: #f0f0f0;
 }
-header{
+
+
+.tab-bar {background-color: #5bc0de; }
+.tab-bar .left-small {border: none; }
+
+
+      .left-off-canvas-menu {background-color: white; }
+        .left-off-canvas-menu .test li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 15px;
+          border-bottom: #bfc0c1 1px solid;
+          line-height: 16px;
+          font-size: 16px;
+          letter-spacing: 2px;
+          color: #34bddd; }
+          .left-off-canvas-menu .test li .arrow2 {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-top: 3px solid  #34bddd;
+            border-right: 3px solid  #34bddd;
+            transform: rotate(45deg); }      
+
+
+/* header{
     position: fixed;
     height: 50px;
     width: 100%;
     top: 0;
     left: 0;
     background-color:#29bde0;
-}
+} */
 
-.menu{
-    float: left;
-    width: 30px;  
-    height: 5px;  
-    border-top: 5px solid white;  
-    border-bottom: 5px solid white;  
-    background-color: white; 
-    padding: 5px 0;  
-    background-clip:content-box;  
-    margin-left: 10px;
-    margin-top: 15px; 
-}
-.flicker{
-    float: right;
-}
+
 .main1{
    margin-top: 80px;
    margin-left: 5%;
@@ -32,7 +44,7 @@ header{
    display: flex;
    align-items: center;
    justify-content: space-around;
-   padding: 20px 0 20px 0;
+   padding: 20px 0 ;
    background-color: #ffffff;
    border-left:1px solid #dedede;
    border-right:1px solid #dedede;
@@ -58,8 +70,9 @@ header{
     padding: 10px 0 10px 0; 
    margin: 20px 0;
     color: #fbb435;
-    height: 20px;
+    height: 40px;
 }
+
 
 .main2-center{
     margin:0 auto;
@@ -76,9 +89,10 @@ header{
     color: #8d8d8d;
     font-size: 10px;
 }
+
 .dot{
-    display: inline;
-    float: left;
+    display: inline-block;
+    
     width: 10px;
      height: 10px;
      background-color: #dedede;
@@ -107,13 +121,15 @@ header{
     align-items: center;
     justify-content: center;
     margin: 20px 0;
+    padding-bottom: 10px;
 }
 .gotoicon{
     right: 3%;
     position: absolute;
     top: 50%;
     transform:translateY(-50%);
-    height: 20px;
+    width: 10px;
+    height: 70px;
     padding: 20px 0;
    
 }
