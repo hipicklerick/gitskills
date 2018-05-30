@@ -32,13 +32,12 @@ ul,li{
 
 li{
     list-style:none;
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
     /*li的文字居中*/
 }
 
 ul{
     margin-top: 50px;
-    
 }
 
 .cat-1 img{
@@ -128,6 +127,7 @@ footer{
     color: white;
     background-color: #f66f6f;
     font-size: 20px;
+    border:1px solid transparent;
 
 }
 .footer-btn-right{
@@ -139,4 +139,5 @@ footer{
     color: white;
     background-color: #fbb435;
     font-size: 20px;
+    border:1px solid transparent;
 }
