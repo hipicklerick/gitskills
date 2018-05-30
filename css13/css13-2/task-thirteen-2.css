@@ -73,34 +73,30 @@ header .headline .close:after {
   width: 30px;
 }
 
-.header2-triangle {
+.traingle-dad {
+  width: 100%;
+  background: #29bde0;
+  height: 10px;
+  position: fixed;
+  top: 0;
+  margin-top: 100px;
+}
+
+.traingle-dad .header2-triangle {
+  display: inline-block;
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 10px solid #b9e9f5;
-  position: relative;
-}
-
-.traingle-dad {
-  width: 100%;
-  background: #29bde0;
-  height: 20px;
-  position: fixed;
-  top: 0;
-  left: 30px;
-  margin-top: 100px;
 }
 
 .header2-content {
-  position: relative;
   width: 100%;
-  left: 30px;
   color: white;
   position: fixed;
   top: 0;
-  left: 30px;
-  margin-top: 110px;
+  margin-top: 120px;
   background: #29bde0;
 }
 
