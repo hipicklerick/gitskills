@@ -1,0 +1,138 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.nav {
+
+    /* height: 50px; */
+    line-height: 50px;
+    margin: 20px 0;
+    background: #29b078;
+    padding: 0 10px;
+    position: relative;
+    /*for menu location*/
+}
+
+.xiuzhenyuan {
+    display: inline-block;
+    color: white;
+}
+
+.menu {
+    display: inline-block;
+    /* position: absolute;
+    right: 0px;
+    top: 0; */
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav a {
+    padding: 0 12px;
+    text-decoration: none;
+    color: white;
+}
+
+/* label标签 */
+
+input[type='checkbox'] {
+    display: none;
+}
+
+#SSN:checked~ul {
+    display: none;
+}
+
+.wrap {
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 5px;
+    background: #29b078;
+    visibility: hidden;
+    position: absolute;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.line {
+    width: 20px;
+    height: 3px;
+    background: #dedede;
+    margin-bottom: 2px;
+}
+
+
+@media screen and (max-width: 768px) {
+    /* .nav {
+        position: relative;
+    } */
+
+    /* input{
+display: block;
+position: absolute;
+top: 0;
+right: 0;
+} */
+    .nav ul {
+        width: 100%;
+        padding: 5px 0;
+        /* position: absolute;
+top: 50px; */
+        /* margin-top: 50px; */
+        border-top: solid 1px #dedede;
+        background: #29b078;
+        
+    }
+    
+
+    nav li {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .wrap {
+        visibility: visible;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        border: 1px solid #dedede;
+    }
+
+    nav li:hover {
+        background: #dedede;
+    }
+    .wrap:hover {
+        background: whitesmoke;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .collapsed-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
