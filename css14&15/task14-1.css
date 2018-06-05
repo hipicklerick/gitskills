@@ -1,0 +1,308 @@
+
+.row-subtitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.dot1 {
+    width: 10px;
+    height: 10px;
+    background: #dedede;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-right: 1px;
+}
+
+.dotline {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.dot1:hover {
+    background: green;
+}
+
+/*栅格布局5列-图片列
+
+.col-sm-1-5,
+.col-md-1-5 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-sm-1-5 {
+    width: 20%;
+    float: left;
+}
+@media(max-width:992px) {
+    .col-zdy-1-5 {
+        margin-top: 3px;
+        margin-bottom: 3px;
+        
+    }
+}
+
+
+@media(min-width:992px) {
+    .col-zdy-1-5 {
+        width: 19%;
+        float: left;
+    }
+}
+*/
+
+@media (min-width:970px){
+    .zdy-1-5{
+        float: left;
+        width: 20%;
+    }
+}
+.zdy-1-5{
+    text-align: center;
+    height: 150px;
+    line-height: 150px;
+    background: white;
+    
+}
+.zdy-1-5:hover{
+    box-shadow: -3px -3px 3px 3px #999 inset;
+}
+
+
+
+/*hover合作企业图片行*/
+
+.sub-box-shadow-needed:hover {
+    box-shadow: 2px 2px 2px 2px gray;
+} /*阴影*/
+
+.sub-box-shadow-needed{
+    background: white;
+}
+
+.box-shadow-needed{
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    
+}
+
+.col-sm-1-10,
+.col-md-1-10 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-sm-1-10 {
+    width: 10%;
+    float: left;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+.cooperation
+{
+    padding: 30px 0;
+}
+
+.clear{
+    clear: both;
+} /*清除浮动*/
+
+ul,
+li {
+    list-style: none;
+}
+
+.ul-dashed {
+    padding-left: 20px;
+    border-left: 1px dashed #dedede;
+}
+
+.student-number-1 {
+    margin-top: 50px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.test {
+    text-align: center;
+}
+
+.test4 {
+    width: 200px ;
+    height: 350px;
+    background: white;
+    margin:0 10px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #dedede;
+}
+
+.test5 {
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+.test7 {
+    padding: 20px 0;
+    height: 150px;
+}
+
+
+.con1{
+    margin: 0 auto;
+}
+
+/*重写*/
+.cat-1,.cat-2{
+    text-align: center;
+}
+.cat-1,.cat-2,.cat-3{
+    padding: 10px 0;
+}
+.cat-3{
+    color: gray;
+    text-align: center;
+}
+.efficiency{
+    padding-bottom: 50px;
+}
+.cat-1{
+    height: 70px;
+}
+.con-2{
+    border-right: 1px dashed #dedede;
+}
+.carousel-inner{
+    margin-bottom: 50px;
+}
+
+.cat-4,.cat-5,.cat-6{
+    text-align: center;
+}
+.cat-6{
+    color: gray;
+}
+.cat-4,.cat-5,.cat-6{
+    padding:15px 10px;
+}
+.consultant{
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    background: white;
+}
+.efficiency,.consultant{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.student-number{
+    text-align: center;
+}
+
+.con-5{
+    width: 10%;
+    float: left;
+}
+
+/*贩卖手机*/
+@media screen and (max-width: 970px) {
+    .col-zdy-5{
+    height: 20px;
+     width: 20%;
+     float: left;
+     
+}
+}
+
+
+@media screen and (min-width: 970px) {
+    .col-zdy-10{
+     height: 20px;
+     width: 10%;
+     float: left;
+
+
+
+     
+ }
+}
+/*贩卖手机*/
+.sub-box-shadow-needed{
+    
+    margin-right: 3px;
+    left: 15px; /* 为了对齐*/
+}
+/*如何学习重写*/
+
+.dot{
+    
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 20px;
+    line-height: 40px;
+    text-align: center;/*使数字水平居中*/
+    margin: 0 auto;/*使dot水平居中*/
+    box-shadow:1px 1px 1px 1px gray;
+}
+.dad{
+    width: 25%;
+    display: table;
+    height: 200px;
+    float: left;
+    overflow: hidden;
+    
+}
+.half-width{
+    width: 50%;
+}
+.son{
+    vertical-align: middle;
+    display: table-cell;
+    margin:0 auto;
+}
+.dot-3{
+    text-align: center;
+    margin: 0 auto;
+}
+.dot-2{
+    margin: 0 auto;
+}
+/*去除横向滚动条*/
+
+
+@media (max-width:970px){
+    
+}

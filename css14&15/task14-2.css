@@ -1,0 +1,105 @@
+.background{
+    background-size: 100%;
+    padding-top: 12.17%;
+    background-image: url(./内部直推.png);
+}
+
+.cooperation{
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+
+.left-nav{
+    float: left;
+    width: 200px;
+    text-align: center;
+    border: 1px solid #dedede;
+    background: white;
+
+}
+a{
+    color: #29b078;
+}
+a:hover{
+    color: orangered;
+}
+
+h4{
+    border-bottom:1px solid #dedede;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.dot{
+width: 10px;
+height: 10px;
+background: #dedede;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+margin-right: 1px;
+display: inline-block;
+}
+.cat-2:hover .dot{
+    background: orangered;
+}
+.cat-2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.cat-toprow{
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.cat-bottomrow{
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+.content{
+    margin-left: 250px; 
+    border: 1px solid #dedede;
+    color: gray;
+    background: white;
+    margin-bottom: 80px;
+}
+.row-1-left{
+    float: left;
+}
+
+.row-1{
+    padding: 10px;
+    overflow: auto; /*清除浮动，对父元素设置*/
+    border-bottom: 1px solid #dedede;
+    padding: 40px;
+    /*如果设置height会出现滚动条*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.article{
+    padding: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .left-nav{
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+}
+
+
+
